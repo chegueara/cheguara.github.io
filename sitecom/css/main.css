@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+}
+.main-screen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1080px;
+    background-image: url(../img/background.png);
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    transform: translateX(-120%);
+}
+.logotype{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(../img/logotype.png);
+
+    width: 183px;
+    height: 61px;
+}
+.main-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 555px;
+    height: 39px;
+}
+.main-links a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    width: 104px;
+    height: 32px;
+}
+.login .profile{
+    width: 22.37px;
+    height: 21.44px;
+    background-image: url(../img/profile.png);
+}
+.login .profile-text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.title-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: flex-end;
+    align-items: flex-start;
+    width: 756px;
+    height: 249px;
+    margin-top: 169px;
+    margin-right: 55px;
+    transform: translateY(-120%);
+}
+.title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 93px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    display: flex;
+    align-self: flex-start;
+}
+.slogan {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+
+    color: #FFFFFF;
+}
+.title-buttons{
+    width: 744px;
+    height: 94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-top: 115px;
+    margin-right: 55px;
+    transform: translateX(+120%);
+}
+.image-ball{
+    width: 806px;
+    height: 318px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    background-image: url(../img/balls.png);
+    margin-top: 55px;
+    margin-right: 0px;
+    transform: translateX(-120%);
+}
+.image-messi{
+    width: 824px;
+    height: 903px;
+    position: absolute;
+    margin-top: 177px;
+    margin-left: 133px;
+
+    background-image: url(../img/messi.png);
+    transform: translateY(-120%);
+}
+.title-buttons button {
+    width: 358.75px;
+    height: 94.19px;
+
+    background: #14B625;
+    border: none;
+    border-radius: 50px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* Animations */
+.main-links a:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.login:hover {
+    transition: 2s;
+    background: #BD7100;
+    transform: scale(1.1);
+}
+.title-buttons button:hover {
+    transition: 1.8s;
+    background: #148f20;
+    font-weight: bold;
+}
+.loaded .header {
+    transition: 1s;
+    transform: translateX(0px);
+}
+.loaded .title-block {
+    transition: 1.4s;
+    transform: translateY(0px);
+}
+.loaded .image-ball {
+    transition: 1.2s;
+    transform: translateX(0px);
+}
+.loaded .image-messi {
+    transition: 1s;
+    transform: translateY(0px);
+}
+.loaded .title-buttons {
+    transition: 0.8s;
+    transform: translateX(0px);
+}
